@@ -1,14 +1,12 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class TestService {
 
   constructor() { }
 
-  printService(someText: string){
-    console.log(someText);
+  add(a, b){
+    return a + b;
   }
 
 }
